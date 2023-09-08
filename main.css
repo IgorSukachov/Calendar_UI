@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template: 100vh;
+    background: #352b48;
+}
+
+.calendar {
+    position: relative;
+    background: #fff;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 15ps solid #fff;
+    box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+.date {
+    width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day:first-child,
+.number:nth-child(7n+1) {
+    color: #f44336;
+    font-weight: 600;
+}
+
+.number, .day {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background: #352b48;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background: #000;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
